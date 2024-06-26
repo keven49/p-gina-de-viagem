@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="pt-BR ">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/12346db609.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <title>Viagem dos sonhos</title>
+</head>
+
+<body>
+  <header class="container-fluid p-2 text-center">
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="navegacao container-fluid">
+        <a class="navbar-brand" href="#"><i class="fa-solid fa-house"></i></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#Cards">Pacotes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Table">Taxas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <i class="fa-solid fa-user"></i>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section class="carouselExampleIndicators container-fluid">
+    <div id="carousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner text-center">
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <img src="Imagens/Carrosel/gramado.png" alt="Primeiro Slide">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Entre mares e montanhas</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <img src="Imagens/Carrosel/porto seguro.png" alt="Segundo Slide">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>De norte a sul</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+          <img src="Imagens/Carrosel/rio de janeiro.png" alt="Terceiro Slide">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Venha conhecer o Brasil</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+  <!-- Search Form Section -->
+  <section class="search-form container-fluid">
+    <div id="Dados">
+      <!-- Title -->
+      <div class="titulo-pesquisa styles__Header-sc-1kpaoz7-1 kGMaLQ" bis_skin_checked="1">
+        <span class="styles__StyledText-sc-jikqhn-0">PASSAGENS AÉREAS</span>
+      </div>
+
+      <!-- Form -->
+      <form method="get" action="">
+        <div class="row">
+          <!-- Origin Input -->
+          <div class="col-md-2">
+            <label for="origin" class="form-label">De onde você está saindo?</label>
+            <input class="form-control" list="datalistOptions" id="origin" placeholder="Busque um aeroporto">
+            <datalist id="datalistOptions">
+              <option value="San Francisco">
+              <option value="New York">
+              <option value="Seattle">
+              <option value="Los Angeles">
+              <option value="Chicago">
+            </datalist>
+          </div>
+
+          <!-- Destination Input -->
+          <div class="col-md-2">
+            <label for="destination" class="form-label">Para onde você vai?</label>
+            <input class="form-control" list="datalistOptions" id="destination" placeholder="Busque uma cidade">
+            <datalist id="datalistOptions">
+              <option value="San Francisco">
+              <option value="New York">
+              <option value="Seattle">
+              <option value="Los Angeles">
+              <option value="Chicago">
+            </datalist>
+          </div>
+
+          <!-- Departure Date Input -->
+          <div class="col-md-2">
+            <label class="form-label" for="dataIda">
+              Data de ida:
+            </label>
+            <input type="date" class="form-control" name="dataIda" id="dataIda">
+          </div>
+
+          <!-- Return Date Input -->
+          <div class="col-md-2">
+            <label class="form-label" for="dataVolta">
+              Data da volta:
+            </label>
+            <input type="date" class="form-control" name="dataVolta" id="dataVolta">
+          </div>
+
+          <!-- Services Select -->
+          <div class="col-md-2">
+            <label class="form-label" for="services-select">Quartos e viajantes</label>
+            <select class="form-select" id="services-select" aria-label="Default select example">
+              <option value="" disabled selected>1 viajante</option>
+              <option value="1">2 viajantes</option>
+              <option value="2">3 viajantes</option>
+              <option value="3">4 viajantes</option>
+              <option value="3">Mais viajantes</option>
+            </select>
+          </div>
+
+          <!-- Search Button -->
+          <div class="col-md-2">
+            <br>
+            <button class="form-btn btn-secondary">Buscar Pacotes</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+  <section class="cardsExample container-fluid">
+    <div id="Cards">
+      <div class="titulo-pacote styles__Header-sc-1kpaoz7-1 kGMaLQ" bis_skin_checked="1">
+        <span class="styles__StyledText-sc-jikqhn-0">PACOTES</span>
+      </div>
+  
+      <!-- Card Grid -->
+      <div class="row row-cols-1 row-cols-md-4 g-4 mb-4">
+      
+          <div class="col">
+            <div class="card h-100">
+              <img src="Imagens/Cards/Belo Horizonte.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Belo Horizonte</h5>
+                <p class="card-text">a partir de: </p>
+                <h1 class="card-subtitle text-muted">R$530,00</h1>
+                <p class="card-text">Ida e volta</p>
+              </div>
+              <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Reservar</a>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+              <img src="Imagens/Cards/Belém.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Belém</h5>
+                <p class="card-text">a partir de: </p>
+                <h1 class="card-subtitle text-muted">R$740,00</h1>
+                <p class="card-text">Ida e volta</p>
+              </div>
+              <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Reservar</a>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+              <img src="Imagens/Cards/Brasília.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Brasília</h5>
+                <p class="card-text">a partir de: </p>
+                <h1 class="card-subtitle text-muted">R$620,00</h1>
+                <p class="card-text">Ida e volta</p>
+              </div>
+              <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Reservar</a>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+              <img src="Imagens/Cards/Campo-grande.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Campo Grande</h5>
+                <p class="card-text">a partir de: </p>
+                <h1 class="card-subtitle text-muted">R$700,00</h1>
+                <p class="card-text">Ida e volta</p>
+              </div>
+              <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Reservar</a>
+            </div>
+          </div>
+        
+      </div>
+  
+      <!-- Card Grid -->
+      <div class="row row-cols-2 row-cols-md-4 g-4 mb-4">
+        
+          <div class="col">
+            <div class="card h-100">
+              <img src="Imagens/Cards/Curitiba.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Curitiba</h5>
+                <p class="card-text">a partir de: </p>
+                <h1 class="card-subtitle text-muted">R$1000,00</h1>
+                <p class="card-text">Ida e volta</p>
+              </div>
+              <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Reservar</a>
+            </div>
+          </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img src="Imagens/Cards/Florianopolis.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Florianopolis</h5>
+              <p class="card-text">a partir de: </p>
+              <h1 class="card-subtitle text-muted">R$790,00</h1>
+              <p class="card-text">Ida e volta</p>
+            </div>
+            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Reservar</a>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img src="Imagens/Cards/Fortaleza.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Fortaleza</h5>
+              <p class="card-text">a partir de: </p>
+              <h1 class="card-subtitle text-muted">R$550,00</h1>
+              <p class="card-text">Ida e volta</p>
+            </div>
+            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Reservar</a>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img src="Imagens/Cards/gramado l.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Gramado</h5>
+              <p class="card-text">a partir de: </p>
+              <h1 class="card-subtitle text-muted">R$690,00</h1>
+              <p class="card-text">Ida e volta</p>
+            </div>
+            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Reservar</a>
+          </div>
+        </div>
+
+      </div>
+  
+      <!-- Card Grid -->
+      <div class="row row-cols-3 row-cols-md-4 g-4 mb-4">
+
+          <div class="col">
+            <div class="card h-100">
+              <img src="Imagens/Cards/Maceió.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Maceió</h5>
+                <p class="card-text">a partir de: </p>
+                <h1 class="card-subtitle text-muted">R$870,00</h1>
+                <p class="card-text">Ida e volta</p>
+              </div>
+              <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Reservar</a>
+            </div>
+          </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img src="Imagens/Cards/Manaus.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Manaus</h5>
+              <p class="card-text">a partir de: </p>
+              <h1 class="card-subtitle text-muted">R$700,00</h1>
+              <p class="card-text">Ida e volta</p>
+            </div>
+            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Reservar</a>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img src="Imagens/Cards/porto seguro c.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Porto Seguro</h5>
+              <p class="card-text">a partir de: </p>
+              <h1 class="card-subtitle text-muted">R$880,00</h1>
+              <p class="card-text">Ida e volta</p>
+            </div>
+            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Reservar</a>
+          </div>
+        </div>
+      
+        <div class="col">
+          <div class="card h-100">
+            <img src="Imagens/Cards/Porto-alegre.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Porto Alegre</h5>
+              <p class="card-text">a partir de: </p>
+              <h1 class="card-subtitle text-muted">R$780,00</h1>
+              <p class="card-text">Ida e volta</p>
+            </div>
+            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Reservar</a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <section class="taxas container-fluid">
+    <div id="Table">
+      <div class="titulo-taxas styles__Header-sc-1kpaoz7-1 kGMaLQ" bis_skin_checked="1">
+        <span class="styles__StyledText-sc-jikqhn-0">NOSSAS TAXAS</span>
+      </div>
+      <table class="table table-warning table-striped table-hover table-bordered border-warning">
+        <caption>Descrição dos serviços e respectivos valores</caption>
+        <thead class="table-secondary">
+          <tr>
+            <th>Serviços</th>
+            <th>Valor</th>
+          </tr>
+        </thead>
+        <tbody class="table-group-divider">
+          <tr>
+            <td>Reserva de hotel</td>
+            <td>R$400,00</td>
+          </tr>
+          <tr>
+            <td>Compra de passangens</td>
+            <td>R$100,00</td>
+          </tr>
+          <tr>
+            <td>Aluguel de carros</td>
+            <td>R$100,00</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <section class="saiba-mais card-container container-fluid">
+    <div class="card-1">
+      <img src="Imagens/cards1/personagem13.webp" alt="Imagem do card 1">
+      <div class="texto-card1">
+        <h2>Quem Somos</h2>
+        <p>Somos para todos! usamos tecnologia para ser sua melhor escolha para voos confortáveis e acessíveis!</p>
+        <a href="#">Saiba Mais →</a>
+      </div>
+    </div>
+
+    <div class="card-1">
+      <img src="Imagens/cards1/personagem16.webp" alt="Imagem do card 2">
+      <div class="texto-card1">
+        <h2>Para qualquer lugar</h2>
+        <p>Oferecemos uma ampla gama de destinos nacionais e internacionais, conectando você aos principais pontos turísticos, 
+          centros de negócios e destinos exóticos ao redor do mundo.</p>
+        <a href="#">Saiba Mais →</a>
+      </div>
+    </div>
+
+    <div class="card-1">
+      <img src="Imagens/cards1/personagem9.webp" alt="Imagem do card 3">
+      <div class="texto-card1">
+        <h2>Nosso Blog</h2>
+        <p>O Conexão AeroViagem é a nossa plataforma de experiências de viagem e traz a você dicas especiais de destinos,
+          cultura, gastronomia e hospedagem.</p>
+        <a href="#">Saiba Mais →</a>
+      </div>
+    </div>
+  </div>
+</section>
+  <div class="fim-pagina container-fluid">
+    <p>Se você está procurando os melhores preços em passagens aéreas temos opções incríveis para você!</p>
+  </div>
+  <footer>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4">
+          <h4>Sobre Nós</h4>
+          <p>Nossa empresa é especializada em viagens e turismo. Nossa equipe é composta por profissionais experientes
+            que se esforçam para proporcionar as melhores experiências para nossos clientes.</p>
+        </div>
+        <div class="col-md-4">
+          <h4>Links Úteis</h4>
+          <ul>
+            <li><a href="#">Perguntas Frequentes</a></li>
+            <li><a href="#">Termos e Condições</a></li>
+            <li><a href="#">Política de Privacidade</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h4>Redes Sociais</h4>
+          <ul>
+            <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="copyright col-md-12">
+          <p class="text-center p-2">&copy; 2023 Viagens Inc. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz4fnFO9gybBgE7ZQejkLrW4pjsDfQz/pf1KpIBc7zEIf/2b38I0eqm6d5"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+    integrity="sha384-ku6A4U4MHAbWQSB04ONlZH1RqFOkTdGkHRFzMzLlF7E2wZYr+lj6ffQ92KpD2gcp"
+    crossorigin="anonymous"></script>
+</body>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Suas reservas</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Produto adicionado ao carrinho!
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Continuar navegando</button>
+        <a href="checkout.html" type="button" class="btn btn-success">Finalizar reserva</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+</html>

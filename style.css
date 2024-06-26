@@ -1,0 +1,398 @@
+/* Global Styles */
+
+body {
+  line-height: 1.4;
+  background-color: var(--bs-gray-100);
+}
+
+h1 {
+  font-size: 63px;
+  color: #fff;
+}
+
+h2 {
+  font-size: 54px;
+  color: #303030;
+  font-weight: 600;
+}
+
+.navbar {
+  margin: 0 auto;
+  color: var(--bs-gray-800);
+  background-color: var(--bs-gray-100);
+  border: 1px solid var(--bs-gray-200);
+  border-radius: 0.25rem;
+}
+
+.navegacao {
+  width: 80%;
+}
+
+.carouselExampleIndicators {
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 2%;
+  padding-top: 2%;
+}
+
+#carousel {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.carousel-inner {
+  text-align: center;
+}
+
+
+.carousel-item img {
+  width: 100%; /* make the images full-width */
+  height: 300px; /* adjust the height of the images */
+  object-fit: cover; /* make the images cover the entire area */
+  border-radius: 10px; /* add a border radius to the images */
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5); /* add a dark background to the captions */
+  margin: 5% auto;
+  padding: 5px; /* add some padding to the captions */
+  border-radius: 10px; /* add a border radius to the captions */
+}
+
+.carousel-caption h5 {
+  font-size: 50px;
+  color: #ffc107;
+  text-shadow: 2px 2px 2px #000;
+}
+
+.carousel-row {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.cardsExample {
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 2%; /* adiciona padding ao container */
+  padding-top: 2%;
+}
+
+/* Cards section styles */
+
+#Cards {
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 2%; /* adiciona padding ao container */
+  padding-top: 2%;
+  border-radius: 10px; /* adiciona borda arredondada ao container */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* adiciona sombra ao container */
+}
+
+/* Estiliza os cards */
+.card{
+  margin-bottom: 2%; /* adiciona margem inferior aos cards */
+  border: none; /* remove a borda dos cards */
+  border-radius: 10px; /* adiciona borda arredondada aos cards */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* adiciona sombra aos cards */
+}
+
+.titulo-pacote {
+  text-align: left;
+  padding-top: 2%;
+  padding-bottom: 1%;
+  padding-left: 2%;
+  font-size: xx-large;
+  font-weight: 600;
+}
+
+/* Estiliza as imagens dos cards */
+.card-img-top {
+  height: 150px; /* ajusta a altura das imagens */
+  object-fit: cover; /* ajusta a imagem para cobrir toda a área */
+  border-radius: 10px 10px 0 0; /* adiciona borda arredondada à imagem */
+}
+
+/* Estiliza o corpo dos cards */
+.card-body {
+  padding: 20px; /* adiciona padding ao corpo dos cards */
+}
+
+/* Estiliza os títulos dos cards */
+.card-title {
+  text-align: left;
+  font-weight: bold; /* ajusta o peso da fonte dos títulos */
+  font-size: 18px; /* ajusta o tamanho da fonte dos títulos */
+  margin-bottom: 10px; /* adiciona margem inferior aos títulos */
+}
+
+/* Estiliza os preços dos cards */
+.card-subtitle {
+  text-align: left;
+  font-size: 24px; /* ajusta o tamanho da fonte dos preços */
+  font-weight: bold; /* ajusta o peso da fonte dos preços */
+  color: #337ab7; /* ajusta a cor dos preços */
+  margin-bottom: 10px; /* adiciona margem inferior aos preços */
+}
+
+/* Estiliza o texto dos cards */
+.card-text {
+  text-align: left;
+  font-size: 16px; /* ajusta o tamanho da fonte do texto */
+  color: #666; /* ajusta a cor do texto */
+}
+
+/* Estiliza os botões de reserva */
+.btn-primary {
+  background-color: #337ab7; /* ajusta a cor de fundo dos botões */
+  color: #fff; /* ajusta a cor do texto dos botões */
+  padding: 10px 20px; /* adiciona padding aos botões */
+  border: none; /* remove a borda dos botões */
+  border-radius: 5px; /* adiciona borda arredondada aos botões */
+  cursor: pointer; /* ajusta o cursor dos botões */
+}
+
+.taxas {
+  background-color: #ffc107;
+  padding: 40px 0;
+  text-align: center;
+}
+
+
+.titulo-taxas {
+  text-align: left;
+  padding: 2%;
+  font-size: xx-large;
+  font-weight: 600;
+}
+
+
+
+#Table {
+  width: 80%;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+  display: inline-block;
+  padding-top: 1%;
+  padding-bottom: 3%;
+  padding-left: 1%;
+  padding-right: 1%;
+  --bs-table-color: var(--bs-gray-600);
+  --bs-table-bg: var(--bs-gray-100);
+  --bs-table-border-color: transparent;
+}
+
+
+/* Variables */
+:root {
+  --bs-table-color: var(--bs-gray-600);
+  --bs-table-bg: var(--bs-gray-100);
+  --bs-table-border-color: transparent;
+}
+
+/* Form container */
+.search-form {
+  background-color: #ffc107;
+  padding: 20px 0;
+  text-align: center;
+}
+
+#Dados {
+  width: 80%;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 20px;
+}
+
+.titulo-pesquisa {
+  text-align: left;
+  padding-bottom: 1%;
+  font-size: xx-large;
+  font-weight: 600;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  gap: 2rem;
+}
+
+
+.form-label {
+  text-align: center;
+}
+
+.form-col-md-2 {
+  margin: 10px;
+  flex-flow: wrap;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: smaller;
+  text-align: left;
+}
+
+.form-control,
+.form-select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-btn {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.formulario-btn:hover {
+  background-color: #218838;
+}
+
+
+
+.saiba-mais {
+    display: flex;
+    gap: 40px;
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    background-color: #f4f4f4;
+    margin: 0 auto;
+    width: 60%;
+}
+
+.card-1 {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.texto-card1 {
+  float: right;
+}
+
+.card-1 h2 {
+  margin-bottom: 10px;
+  color: #333;
+  text-align: left;
+  font-weight: bold; /* ajusta o peso da fonte dos títulos */
+  font-size: large; /* ajusta o tamanho da fonte dos títulos */
+}
+
+.card-1 p {
+  line-height: 1.6;
+  color: #666;
+  text-align: left;
+  margin-bottom: 10px; /* adiciona margem inferior aos preços */
+  font-size: 15px; /* ajusta o tamanho da fonte dos títulos */
+}
+
+.card-1 img {
+  float: left;
+  margin-right: 20px;
+  width: 150px; /* adjust the width to your liking */
+  margin-right: 20px
+    
+}
+
+.card-1 a {
+  display: flex;
+  color: #ff6600;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  text-align: left;
+  font-size: 15px; /* ajusta o tamanho da fonte dos preços */
+  font-weight: bold; /* ajusta o peso da fonte dos preços */
+  margin-bottom: 10px; /* adiciona margem inferior aos preços */
+}
+
+.card-1 a:hover {
+    color: #f89e45;
+}
+
+.fim-pagina {
+  text-align: center;
+  padding-bottom: 3%;
+  font-style: Arial;
+}
+
+footer {
+  background-color: #ffc107; /* Cor de fundo do footer */
+  color: black; /* Cor do texto do footer */
+  padding: 20px; /* Espaçamento interno do footer */
+  clear: both; /* Limpar floats */
+  display: grid; /* Add grid layout */
+  grid-template-columns: repeat(1, 1fr); /* Create a single column */
+  justify-items: center; /* Center the columns */
+}
+
+footer .container-fluid {
+  width: 70%;
+  padding-top: 20px; /* Espaçamento interno do container */
+  grid-template-columns: repeat(1, 1fr); /* Create a single column */
+  justify-items: center; /* Center the columns */
+}
+
+
+footer h4 {
+  margin-top: 0; /* Remover margem superior do título */
+  font-weight: bold; /* Negrito do título */
+  color: black; /* Cor do título */
+}
+
+footer ul {
+  list-style: none; /* Remover estilo de lista */
+  padding: 0; /* Remover espaçamento interno da lista */
+  margin: 0; /* Remover margem da lista */
+}
+
+footer li {
+  margin-bottom: 10px; /* Espaçamento entre os itens da lista */
+}
+
+footer a {
+  color: black; /* Cor do link */
+  text-decoration: none; /* Remover sublinhado do link */
+  transition: color 0.2s ease; /* Efeito de transição do link */
+}
+
+footer a:hover {
+  color: #574c4c; /* Cor do link ao passar o mouse */
+}
+
+footer .social-links {
+  font-size: 18px; /* Tamanho da fonte dos ícones sociais */
+}
+
+footer .social-links i {
+  margin-right: 10px; /* Espaçamento entre os ícones sociais */
+}
+
+footer .copyright {
+  font-size: medium; /* Tamanho da fonte do copyright */
+  color: #000000; /* Cor do copyright */
+  font-style: Arial;
+  padding-top: 3%;
+}
